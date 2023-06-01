@@ -1,0 +1,489 @@
+<html>
+<head>
+<title>miniiiiiii</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+
+ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  font-weight: bolder;
+  padding: 0;
+}
+
+.image_wrapper {
+  position: relative;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(57, 57, 57, 0.5);
+ 
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.overlay_5 {
+  inset: 0;
+  transform: scale(0);
+  transition: all .3s ease-in-out;
+}
+
+.image_wrapper:hover .overlay_5 {
+  transform: scale(1);
+}
+  .card {
+        margin-left:10px;
+        height:200px;
+width:250px;
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWrUoIYjitPEU6zpzTDylNjFgIAmf4QLtneEjD3gQdUefoBhbzrqH7EQb5sK61dbckqsNOjOc0vKc&usqp=CAU&ec=48665699") no-repeat;
+border-style:inset;
+        display: inline-block;
+    }
+    .card:hover {
+        background: url("data:image/jpeg;base64,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") no-repeat;
+        height:200px;
+weight:250px;
+    }
+.vard {
+        margin-left:10px;
+       height:200px;
+width:250px;
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR8PjmVEYzAjpDH-8FCAKZp9JqCvQ43WNOwglw1NZ9eXCWjYjtEvLAqg6XTwH0HGUiX5GYPGEO58Q&usqp=CAU&ec=48665699") no-repeat;
+
+border-style:outset;
+        display: inline-block;
+    }
+    .vard:hover {
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuOfZO6GculBvnHCKVL5uHUZBeNFUdS3wOqGG8Uq5m5w&usqp=CAU&ec=48665699") no-repeat;
+
+    }
+       
+                                           
+ .img {
+  position: absolute;
+  left: 5px;
+  top: 30px;
+  z-index:-1;
+}
+
+#mybox {
+position:absolute;
+top:25px;
+font-color:white!important;
+font-size:20px;                                                            
+padding:7px;
+background-color:red!important;
+z-index:2;
+}
+//code for top navigation
+
+@import url("https://www.w3cplus.com/demo/css3/base.css");
+
+@font-face {
+    font-family: 'sansationregular';
+    src: url('https://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.eot');
+    src: url('https://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.eot?#iefix') format('https://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/embedded-opentype'),
+         url('https://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.woff') format('woff'),
+         url('https://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.ttf') format('truetype'),
+         url('https://www.w3cplus.com/demo/css3/3DAnimationDropdownMenu/sansation_regular-webfont.svg#sansationregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  background-color:#edecec;
+}
+ul, li {
+  list-style: none outside none;
+}
+
+.nav-menu {
+  display: block;
+  background: #74adaa;
+  width:951px;
+   margin: 4px 200px 10px;
+}
+.nav-menu > li {
+  display: inline;
+  float:left;    
+  border-right:1px solid #94c0be;
+  position: relative;
+}
+.nav-menu > li:last-child {
+  border-right: none;
+}
+.nav-menu li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-family: 'sansationregular';
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-transform: capitalize;
+  overflow: visible;
+  line-height: 20px;
+  font-size: 20px;
+  padding: 15px 30px 15px 31px;    
+}
+
+/* animation domination */
+.three-d {
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
+  -ms-perspective: 200px;
+  -o-perspective: 200px;
+  perspective: 200px;
+  -webkit-transition: all .07s linear;
+  -moz-transition: all .07s linear;
+  -ms-transition: all .07s linear;
+  -o-transition: all .07s linear;
+  transition: all .07s linear;
+  position: relative;
+}
+
+.three-d:not(.active):hover {
+  cursor: pointer;
+}
+
+.three-d:not(.active):hover .three-d-box,
+.three-d:not(.active):focus .three-d-box {
+  -wekbit-transform: translateZ(-25px) rotateX(90deg);
+  -moz-transform: translateZ(-25px) rotateX(90deg);
+  -o-transform: translateZ(-25px) rotateX(90deg);
+  -ms-transform: translateZ(-25px) rotateX(90deg);
+  transform: translateZ(-25px) rotateX(90deg);
+}
+
+.three-d-box {
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  -webkit-transform: translatez(-25px);
+  -moz-transform: translatez(-25px);
+  -ms-transform: translatez(-25px);
+  -o-transform: translatez(-25px);
+  transform: translatez(-25px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  -o-pointer-events: none;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  -webkit-transform: rotatex(0deg) translatez(25px);
+  -moz-transform: rotatex(0deg) translatez(25px);
+  -ms-transform: rotatex(0deg) translatez(25px);
+  -o-transform: rotatex(0deg) translatez(25px);
+  transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+  -webkit-transform: rotatex(-90deg) translatez(25px);
+  -moz-transform: rotatex(-90deg) translatez(25px);
+  -ms-transform: rotatex(-90deg) translatez(25px);
+  -o-transform: rotatex(-90deg) translatez(25px);
+  transform: rotatex(-90deg) translatez(25px);
+  color: #FFE7C4;
+}
+
+.front, .back {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #74adaa;
+  padding: 15px 30px 15px 31px;
+  color: white;
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  -o-pointer-events: none;
+  pointer-events: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.nav-menu li .active .front,
+.nav-menu li .active .back,
+.nav-menu li a:hover .front,
+.nav-menu li a:hover .back {
+  background-color: #51938f;
+  -webkit-background-size: 5px 5px;
+  background-size: 5px 5px;
+  background-position: 0 0, 30px 30px;
+  background-image: -webit-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+  background-image: -moz-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+  background-image: -ms-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+  background-image: -o-linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+  background-image: linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+}
+.nav-menu ul {
+  position: absolute;
+  left: -40px;
+  text-align: left;
+  line-height: 40px;
+  font-size: 14px;
+  width: 200px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-transform-origin: 0px 0px;
+  -moz-transform-origin: 0px 0px;
+  -ms-transform-origin: 0px 0px;
+  -o-transform-origin: 0px 0px;
+  transform-origin: 0px 0px;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.nav-menu > li:hover ul {
+  display: block;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+
+</style>
+</head>
+<body style="background-color:AntiqueWhite;">
+<center><p style="padding:10px;background-color:black;color:white;">10% Offer on Your First Order</p>
+<h5 style="color:black;font-family:Lucida Handwriting;font-size:300%;">LEVONA</h5>
+<b><h5 style="color:black;font-family:Papyrus;font-size:150%;">An Organic Shop</h5></b></center>
+<div id="nav">
+      <ul class="nav-menu clearfix unstyled">
+        <li><a href="ani.html" class="three-d">
+          Home
+          <span class="three-d-box"><span class="front">Home</span><span class="back">Home</span></span>
+        </a></li>
+        <li><a href="skindef.html" class="three-d">
+          Services
+          <span class="three-d-box"><span class="front">SkinCare</span><span class="back">SkinCare</span></span>
+        </a></li>
+        <li><a href="hairdef.html" class="three-d">
+          Products
+          <span class="three-d-box"><span class="front">HairCare</span><span class="back">HairCare</span></span>
+        </a></li>
+        <li><a href="babydef.html" class="three-d">
+          About
+          <span class="three-d-box"><span class="front">BabyCare</span><span class="back">BabyCare</span></span>
+        </a></li>
+        <li><a href="bodydef.html" class="three-d">
+          Contact
+          <span class="three-d-box"><span class="front">BodyCare</span><span class="back">BadyCare</span></span>
+        </a></li>
+        <li><a href="allproduct.html" class="three-d">
+          Products
+          <span class="three-d-box"><span class="front">Products</span><span class="back">Products</span></span>
+        </a>
+          
+        </li>
+        <li><a href="oraldef.html" class="three-d">
+          Shop On-line
+          <span class="three-d-box"><span class="front">OralCare</span><span class="back">OralCare</span></span>
+        </a></li>
+      </ul>
+    </div>
+</div>
+  <center><div class="img"><div class="w3-content w3-section" >
+
+  <img class="mySlides" src="https://assets.vogue.in/photos/5ce41d389cc0c04346f9c1a5/16:9/pass/Skincare-and-haircare-products-with-natural-ingredients.jpg"style="height:800px;width:1650px;margin-left:0px;margin-top:200px;">
+  <img class="mySlides" src="https://img.freepik.com/free-photo/natural-cosmetic-products-frame_23-2148574901.jpg?w=2000"style="height:800px;width:1650px;margin-left:0px;margin-top:200px;">
+  <img class="mySlides" src="https://img.gcimagazine.com/files/base/allured/all/image/2022/02/dreamstime_xxl_186368686.61fc55a07b66c.png?auto=format%2Ccompress&fit=max&q=70&w=1200"style="height:800px;width:1650px;margin-left:0px;margin-top:200px;">
+</div></div></center>
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+<center><b><h2 style="font-family:milkshake;">Grab It Now</h2></center></b><br>
+<div class="inset"><div  style="margin-left:350px;"class="card">
+<div class="outset"><div style="margin-left:450px;"class="vard"></div></div>
+</div>
+</div>
+<center><h2 style="font-family:cursive;">Know more about the products</h2></center>
+
+<div class="row">
+  <div class="column">
+<section>
+  <ul>
+
+    <li class="image_wrapper">
+      <img src="https://img.freepik.com/premium-vector/hair-care-drawing-with-cartoon-child_29937-9071.jpg?w=2000"/>
+      <div class="overlay overlay_5">
+      <h3 style="color:white;margin-left:50px;margin-right:50px;">Hair Care products are those that help to control the properties and behavior of the hair so that it can be maintained in a controlled and desirable manner.</h3>
+        </a>
+      </div>
+    </li>
+  </ul>
+</section>
+</div>
+
+<div class="row">
+  <div class="column">
+<section>
+  <ul>
+
+    <li class="image_wrapper">
+      <img src="https://st.depositphotos.com/1763321/2151/v/600/depositphotos_21515879-stock-illustration-young-woman-applying-cucumber-mask.jpg"/>
+<div class="overlay overlay_5">
+      <h3 style="color:white;margin-left:50px;margin-right:50px;">They can improve the texture and appearance of your skin while protecting it from the effects of the sun, pollutants, and other problems that can also have a negative impact on your health.</h3>
+
+        </a>
+      </div>
+    </li>
+  </ul>
+</section>
+</div>
+<div class="row">
+  <div class="column">
+<section>
+  <ul>
+
+    <li class="image_wrapper">
+      <img src="https://img.freepik.com/free-vector/cute-baby-crawling-cartoon-character_1308-107752.jpg" style="height:420px;"/>
+      <div class="overlay overlay_5">
+      <h3 style="color:white;margin-left:50px;margin-right:50px;">Baby products include baby shampoos, baby Wash and baby lotions, baby oils, baby powders and baby creams. Now a days even baby cologne, baby perfume etc. are also available.</h3>
+     
+  </a>
+      </div>
+    </li>
+  </ul>
+</section>
+</div>
+</div>
+<div><center>
+<table cellpadding="10">
+<tr>
+<td><video width="520" height="440" controls>
+  <source src="https://media.istockphoto.com/id/1295852225/video/herbs-and-flowers-falling-into-the-granite-mortar-with-pestle-in-slow-motion-healthy-and.mp4?s=mp4-640x640-is&k=20&c=Sjwp-KgJ1AqE3HGAgrPkyE6kmwn_PkYwvTRK88hah8Q=" type="video/mp4">
+</video></td>
+<td><h2 style="font-family:Papyrus;">Herbs and flowers falling into the granite mortar with pestle in slow motion. Healthy and organic food, herb medicine, natural care, aromatherapy and organic cosmetics concept.</h2></td>
+</tr>
+</table>
+</center>
+</div>
+
+
+</body>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+</html>

@@ -1,0 +1,307 @@
+<html>
+<head>
+<title>babydef</title>
+<style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family:milkshake;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+h1 {
+  font-family: "Montserrat Medium";
+  max-width: 150ch;
+ 
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+color:black;
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 1.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 0.8s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+body.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+
+.area{
+    background: yellow;  
+    background: -webkit-linear-gradient(to left, white,orange);  
+    width: 100%;
+    height:1000vh;
+    
+   
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 30s linear infinite;
+    bottom: -50px;
+    
+}
+
+.circles li:nth-child(1){
+top:20%;
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+top:20%;
+    left: 10%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+top:90%;
+    left: 70%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+top:90%;
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.circles li:nth-child(5){
+top:90%;
+    left: 65%;
+    width: 60px;
+    height: 50px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+top:90%;
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+.circles li:nth-child(7){
+top:90%;
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 5s;
+    animation-duration: 5s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+</style>
+</head>
+<body >
+<div class="context">
+</div>
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+<a href="sujeet.html">BACK</a>
+<span><center><h2 style="font-size:100px;font-family:CASTELLAR;margin-left:50px;">Baby Care</h2></center></span>
+<h1 style="color:white;">
+  <center><span><a style="color:white;" href="baby.html">View Products</a></span></center>
+  <center><span><img src="https://cdn.shopify.com/s/files/1/0279/8177/4927/collections/bc-600_1024x_db05fb9e-53d9-46a6-ad45-fc4fd6591d0a.webp?v=1680156081"style="height:200px;width:300px;"></span></center>
+  <br><center><span></span>
+  <span>Baby products are products intended to be used ok infants</span>
+  <span>and children under the age of three. They are specially formulated to be mild</span>
+  <span>and non-irritating, and use ingredients selected for these properties.</span>
+  <span>Baby products include baby shampoos and baby lotions,</span>
+  <span>oils, powders and creams.</span>
+  <<br><br>
+  <span><u><h2 sytle="font-family:CASTELLAR;">BENEFITS</h2></u></span><br><br>
+  <span>Exhibits Good Skin Treatment Features</span>
+  <span>Helps You Become Eco-Friendly</span>
+  <span>No More Doubt Regarding The Baby’s Health</span>
+  <span>Spend Quality Time While Pampering The Baby With Healthy Products</span>
+
+ </center>
+</ul>
+</div>
+</h1>
+</body>
+</html>

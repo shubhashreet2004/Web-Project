@@ -1,0 +1,139 @@
+<html>
+ <head>
+<title>FORM</title>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+body{
+
+background-image:url("https://opengameart.org/sites/default/files/aaaaaaaaaaa01.gif");
+}
+.form-cont{
+display:flex;
+flex-direction:column;
+height:800px;
+width:650px;
+align-items:center;
+margin:auto;
+background-color:grey;
+box-shadow:inset -5px -5px white;
+border-radius:30px;
+
+
+}
+textarea {
+  resize: none;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+div {
+  border-radius: 5px;
+
+  padding: 20px;
+}
+
+
+</style>
+<body style="font-family:CASTELLAR;color:white;">
+<div class="form-cont">
+<div class="form">
+<form class="myform" method="post" action="" onsubmit="create_account()" >
+<a style="color:white;"href=sujeet.html>GO BACK</a>
+<center><h1 style="font-family:CASTELLAR;"> PAYMENT</h1></center>
+<pre>  </pre>
+    <hr>
+  <b><label for="email">Enter your email:</label>
+  <input style="border-radius:30px;" type="text"placeholder="Enter email" id="e1">
+
+    
+
+   <label style="font-family:CASTELLAR;" for="fname">CUSTOMER NAME  :</label>
+   <input style="border-radius:30px;"  type="text"  placeholder="enter name" id="n1"><pre></pre>
+   <i class="bx-bx-user"></i>
+
+
+   <label style="font-family:CASTELLAR;" for="lname">Contact Number  :</label>
+   <input style="border-radius:30px;"  type="text" placeholder="Enter contact number " id="c1"><br><br>
+   
+   <label>Mode of payment </label>
+             
+   <input style="height:20px;width:20px;" type="radio" name="gender" value="male">Cash on delivery
+   <input style="height:20px;width:20px;" type="radio" name="gender" value="femele">Oline payment<br><br><br>
+<lable for="cars">quantity of product</lable>
+<select id="cars" name="cars">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+   <div><label for="w3review">Address</label>
+
+<textarea id="Address" name="Address" rows="4" cols="60">
+
+</textarea>
+
+
+
+  
+
+   <hr>
+
+   <center><input  type="submit" value="Submit"style="height:50px;width:100px;"></center>
+ </b>
+</body>
+<script type="text/javascript">
+function create_account(){  
+var n=document.getElementById("n1").value;  
+var e=document.getElementById("e1").value;  
+var p=document.getElementById("p1").value;  
+var cp=document.getElementById("p2").value; 
+var c=document.getElementById("c1").value;
+var phone=/^\d{10}$/;  
+//Code for password validation  
+        var letters = /^[A-Za-z]+$/;  
+        var email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;  
+//other validations required code  
+if(n==''||e==''||p==''||cp==''||c==''){
+alert("Enter each details correctly");  
+}  
+else if(!letters.test(n))  
+        {  
+alert('Name is incorrect must contain alphabets only');  
+        }  
+else if (!email_val.test(e))  
+        {  
+alert('Invalid email format please enter valid email id');  
+        }  
+else if(p!=cp)  
+{  
+alert("Passwords not matching");  
+}  
+else if(document.getElementById("p1").value.length> 12)  
+{  
+alert("Password maximum length is 12");  
+}  
+else if(document.getElementById("p1").value.length< 6)  
+{  
+alert("Password minimum length is 6");  
+} 
+else if(!phone.test(c))
+{
+alert("Contact number must contain only numbers");
+} 
+else{
+alert("Your form has been submitted successfully... ");  
+}  
+}  
+</script>
+</body>
+</html>
